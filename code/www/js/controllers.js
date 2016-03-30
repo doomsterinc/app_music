@@ -29,7 +29,7 @@ Controller for the discover page
 
 	$scope.sendFeedback = function(bool) {
 		var randomSong = Math.round(Math.random()*($scope.songs.length - 1));
-		$scope.currentSong = angular.copy($scope.songs[0]);
+		$scope.currentSong = angular.copy($scope.songs[randomSong]);
 	};
 })
 
